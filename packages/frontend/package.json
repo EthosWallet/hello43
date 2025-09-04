@@ -1,0 +1,47 @@
+{
+  "name": "@company/frontend",
+  "version": "1.0.0",
+  "description": "Frontend application",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^18.0.0",
+    "lodash": "^4.17.21",
+    
+    // DEPENDENCY CONFUSION VULNERABILITIES
+    "internal-utils": "^1.0.0",
+    "company-secrets": "^2.1.0", 
+    "@mycompany/private-lib": "^1.5.0",
+    "proprietary-config": "^0.8.0",
+    
+    // GitHub repo that doesn't exist (repo jacking)
+    "awesome-missing-lib": "git+https://github.com/nonexistent-org/awesome-missing-lib.git",
+    "super-tool": "git+https://github.com/fake-owner/super-tool.git#v1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    
+    // More dependency confusion targets
+    "build-scripts": "^1.2.0",
+    "deployment-tools": "^3.0.0",
+    
+    // More GitHub repo jacking opportunities
+    "test-framework": "git+https://github.com/missing-org/test-framework.git",
+    "webpack-plugin-custom": "git+https://github.com/abandoned-user/webpack-plugin-custom.git"
+  },
+  "peerDependencies": {
+    // These should also be tested
+    "company-design-system": "^2.0.0",
+    "internal-analytics": "^1.8.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-company/frontend-app.git"
+  },
+  "author": "Your Company",
+  "license": "MIT"
+}
