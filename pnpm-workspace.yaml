@@ -1,6 +1,3 @@
 packages:
-  - 'packages/*'
-  - 'apps/*'
-  - 'tools/cli'
-  - '!**/test/**'  # exclusion pattern
-  - 'services/api'
+  - "packages/*"
+  - "apps/*"
